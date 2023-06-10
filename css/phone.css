@@ -1,0 +1,102 @@
+/* CSS Reset */
+*{
+    margin:0;
+    padding:0;
+}
+/* Navigation Bar */
+
+/* About Section */
+#about .leftSection{
+    display: none;
+}
+
+/* Education Section */
+#education{
+    flex-wrap:wrap;
+}
+#education .box{
+    flex-basis:60%;
+    padding:0px;
+    margin-top:50px;
+}
+#education .box:hover{
+    background-color: white;
+}
+#education .box i{
+    color:black;
+}
+/* Certification Section */
+#certification .cert-col{
+    flex-basis:60%;
+    height:400px;
+    background: linear-gradient(to right, rgb(76, 198, 76), rgb(23, 186, 23));
+    margin-top:30px;
+    margin-left:0px;
+}
+#certification .udemy{
+    margin-bottom: 60px;
+}
+.heading-certification{
+    margin-bottom:0px;
+}
+/* Project Section */
+
+.projects{
+    flex-wrap:wrap;
+}
+.projects .project1{
+    width: 90%;
+}
+.projects .project2{
+    width:90%;
+}
+.projects .project3{
+    width:90%;
+}
+
+
+/* Contact Section */
+
+#seventhSection .contact .details{
+    flex-basis:60%;
+    height:40vh;
+    background:linear-gradient(to right, rgb(90, 230, 90), rgb(148, 255, 148));
+}
+/* Form Section  */
+.eightSection .left{
+    display:none;
+}
+.eightSection .right input{
+    width: 60vw;
+}
+.eightSection .right textarea{
+    width: 60vw;
+}
+/* Footer Section */
+#footer .footer{
+    flex-wrap:wrap;
+}
+
+.foot{
+    width:25%;
+}
+.foot img{
+    display:none;
+}
+
+/* About Section */
+
+#about .rightSection{
+    flex-basis:70%;
+    width:90%;
+}
+
+#about h3{
+    text-align:center;
+}
+
+#about .rightSection .btn{
+    margin-top:20px;
+    width:200px;
+}
+

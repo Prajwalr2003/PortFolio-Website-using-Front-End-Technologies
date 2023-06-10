@@ -1,0 +1,769 @@
+/* Default Reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+/* Navigation Bar */
+#navbar{
+    display:flex;
+    justify-content: space-evenly;
+    align-items:center;
+    top:0;
+    left:0;
+    position:sticky;
+    height:60px;
+}
+#navbar::before{
+    background-color: white;
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    z-index:-1;
+}
+/* Navigation Bar - Logo and Image */
+#navbar #logo img{
+    width: 100px;
+}
+/* Navigation Bar - List and Styling */
+#navbar ul{
+    display:flex;
+    font-size: 1.01rem;
+}
+#navbar ul li{
+    list-style:none;
+    margin:20px;
+}
+#navbar ul li a{
+    text-decoration:none;
+    color:black;
+}
+#navbar .toggle-bar i{
+    font-size:1.5rem;
+    cursor:pointer;
+    display:none;
+}
+
+/* DropDown Menu */
+.dropdown_menu{
+    display:none;
+    position:absolute;
+    right:11rem;
+    top:60px;
+    height:0;
+    width:300px;
+    /* background-color: red; */
+    backdrop-filter:blur(15px);
+    border-radius:10px;
+    overflow:hidden;
+    transition:height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.dropdown_menu.open{
+    height:240px;
+}
+.dropdown_menu li{
+    padding: 0.7rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Home Section */
+
+#home{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    height: 80vh;
+}
+
+#home .first-para{
+    font-size:16px;
+    font-weight: bold;
+    letter-spacing: 4px;
+    color:rgb(3, 134, 3);
+}
+#home .main-heading{
+    font-size:4rem;
+    font-weight: 900;
+    font-family: 'Sorts Mill Goudy', serif;
+    letter-spacing: 2px;
+    text-transform:uppercase;
+}
+
+#home .second-para{
+    font-size: 25px;
+    font-weight:bold;
+}
+
+/* About Section */
+
+#about{
+    display:flex;
+    justify-content: center;
+    align-items: center; 
+    margin: 100px 0px;
+    flex-wrap:wrap;
+}
+
+#about .leftSection{
+    flex-basis:30%
+}
+
+#about .rightSection{
+    flex-basis: 50%;
+    padding: 20px;
+}
+
+#about .rightSection h3{
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    padding:6px;
+}
+#about .rightSection .my-desc{
+    margin-bottom: 15px;
+    color: gray;
+}
+#about .rightSection p{
+    padding: 6px;
+    font-size: 16px;
+}
+#about .rightSection .desc{
+    font-weight:bold;
+}
+
+#about .rightSection .desc span{
+    font-weight:normal;
+    color:gray;
+}
+#about .rightSection .desc .name{
+    margin-left: 80px;
+}
+#about .rightSection .desc .dob{
+    margin-left: 29px;
+}
+#about .rightSection .desc .address{
+    margin-left: 62px;
+}
+#about .rightSection .desc .pincode{
+    margin-left: 58px;
+}
+
+#about .rightSection .desc .email{
+    margin-left: 84px;
+}
+#about .rightSection .desc .phone{
+    margin-left: 78px;
+}
+#about .rightSection h4{
+    /* margin-left: 6px; */
+    padding: 6px;
+}
+#about .rightSection .btn{
+    margin-left: 6px;
+    margin-top: 10px;
+    width: 12em;
+    height:7vh;
+    border: 1px solid black;
+    background-color: rgb(19, 237, 19);
+    border-radius: 15px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:black;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+
+#about .rightSection h4 .project{
+    color:rgb(19, 237, 19);
+}
+/* #about .rightSection .btn:hover{
+    text-decoration:underline;
+} */
+
+/* Education Section */
+.heading-education{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.heading-education h3{
+    font-size:2.3rem;
+    margin-bottom:10px;
+}
+#education div h4{
+    font-size:1.2rem;
+    margin-bottom:10px;
+    margin-top:10px;
+    text-align:center;
+}
+.thirdSection > p{
+    text-align: center;
+}
+#education .box i{
+    color:rgb(3, 134, 3);
+}
+#education{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row;
+}
+#education .box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:30%;
+    height:220px;
+    margin: 20px;
+    padding: 3em;
+    transition: .1s background-color ease-in;
+    flex-basis:30%;
+}
+
+#education .box:hover{
+    background-color: rgb(19, 237, 19);
+}
+
+#education .box:hover i{
+    color:black;
+}
+
+#education .box p{
+    padding: 6px;
+    text-align:center;
+}
+
+#education .box .underline{
+    width: 60px;
+    border:1.5px solid green;
+    margin-bottom: 13px;
+}
+
+/* Skills Section  */
+
+.heading-skills{
+    text-align:center;
+    margin-bottom: 20px;
+    padding-top:20px;
+}
+.heading-skills h3{
+    font-size:2.4rem;
+    margin-bottom:10px;
+    margin-top:40px;
+}
+.fourthSection > p{
+    text-align: center;
+}
+
+#skills{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+    height:100%;
+}
+
+#fourthSection{
+    background-color: rgb(115, 240, 119);
+}
+
+#skills img{
+    margin:5px;
+    padding:20px;
+    height:150px;
+    width:150px;
+    /* cursor:pointer; */
+}
+/* #skills img:hover{
+    background-color: rgb(19, 237, 19);
+    transition: .1s background-color ease-in;
+} */
+
+#skills .hacking-logo img{
+    height:250px;
+    width:350px;
+}
+/* #skills a{
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+} */
+
+/* Certification Section */
+.heading-certification{
+    text-align:center;
+    margin-bottom: 20px;
+}
+.heading-certification h3{
+    font-size:2.3rem;
+    margin-bottom:10px;
+    margin-top:80px;
+}
+
+#certification{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap:wrap;
+}
+
+#certification .cert-col{
+    margin-left:20px;
+    flex-basis:40%;
+    height:60vh;
+    padding:20px;
+    text-align:center;
+}
+#certification .cert-col h4{
+    font-size:1.4rem;
+    text-align:center;
+}
+#certification .cert-col p{
+    margin-top:10px;
+}
+#certification .cert-col img{
+    height: 60px;
+    padding: 30px;
+}
+
+#certification .cert-col a .btn{
+    padding:15px;
+    margin-top:15px;
+    width:250px;
+    font-size:1rem;
+    cursor:pointer;
+    border-radius:20px;
+    font-weight: bold;
+}
+#certification .cert-col a .btn i{
+    margin-left:5px;
+}
+/* Project Section */
+/* background-color:rgb(5, 187, 5); */
+#sixthSection{
+    display:none;
+}
+.heading-projects{
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.heading-projects h1{
+    font-size:50px;
+    margin-bottom:10px;
+    margin-top:200px;
+}
+
+.projects{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects .project1{
+    width: 30%;
+    margin:20px;
+    border: 2px solid red;
+    height: 400px;
+    padding: 20px;
+}
+.projects .project2{
+    width: 30%;
+    margin:20px;
+    border: 2px solid red;
+    height: 400px;
+    padding: 20px;
+}
+.projects .project3{
+    width: 30%;
+    margin:20px;
+    border: 2px solid red;
+    height: 400px;
+    padding: 20px;
+}
+
+/* Contact Section */
+.heading-contact{
+    text-align:center;
+    margin-bottom:40px;
+    margin-top:20px;
+}
+
+.heading-contact h3{
+    font-size:2.3rem;
+}
+
+#seventhSection .contact{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#seventhSection .contact i{
+    font-size:30px;
+    color:white;
+}
+
+#seventhSection .contact .details .box-circle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(23, 191, 23);
+    width: 50px;
+    padding: 25px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom:20px;
+    
+}
+
+#seventhSection .contact .details{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap:wrap;
+    flex-basis:20%;
+    /* margin-left:15px; */
+    margin-top:15px;
+    width:30%;
+    height:30vh;
+    text-align: center;
+    padding:15px;
+    position:static
+}
+
+
+/* Form Section */
+.eightSection{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top: 100px;
+}
+.eightSection .left, .right {
+    margin: 20px;
+}
+.eightSection .left img{
+    height: 600px;
+}
+.eightSection .right input{
+    padding:10px;
+    margin: 10px;
+    width: 26vw;
+    height: 5vh;
+    font-size:1rem;
+    border:1px solid black;
+}
+.eightSection .right textarea{
+    padding:10px;
+    margin: 10px;
+    width: 26vw;
+    font-size:1rem;
+    border:1px solid black;
+    font-family: "Poppins", Arial, sans-serif;
+}
+.eightSection .right .submit .btn{
+    margin-left:10px;
+    width: 12em;
+    height:7vh;
+    border: none;
+    background-color: rgb(19, 237, 19);
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color:white;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    cursor:pointer;
+}
+.eightSection .right .submit .btn:hover{
+    color: black;
+}
+
+/* Footer Section */
+.row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width:85%;
+    margin:auto;
+}
+
+footer{
+    background-color: black;
+    padding:70px 0;
+    color:#ffffff;
+}
+.footer-col{
+    flex-basis:25%;
+    padding: 0 15px;
+}
+.footer-col:nth-child(2),.col:nth-child(3){
+    flex-basis:15%;
+}
+.footer-col h3{
+    font-size:18px;
+    color:white;
+    text-transform:capitalize;
+    margin-bottom:30px;
+}
+.email-id{
+    width:fit-content;
+    border-bottom:1px solid #ccc;
+    margin:20px 0;
+}
+
+.footer-col ul li:note(:last-child){
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:300;
+    display:block;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.footer-col ul li a:hover{
+    color:#ffffff;
+    padding-left:10px;
+}
+.footer-col div a{
+    font-size:16px;
+    text-transform:capitalize;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:300;
+    display:block;
+    transition:all 0.3s ease;
+    cursor:pointer;
+}
+.footer-col div a:hover{
+    color:#ffffff;
+    padding-left:10px;
+}
+
+.footer-col a img{
+    height: 20px;
+    width: 20px;
+}
+.footer-col div a p{
+    display:inline-block;
+    padding:7px;
+}
+.footer-col i{
+    margin-right:10px;
+}
+#footer .follow{
+    font-size:1rem;
+    text-align:center;
+    padding: 60px;
+}
+
+#footer .follow i{
+    font-size: 3rem;
+    margin: 10px;
+    color:white;
+}
+
+/* Utility Classes */
+#element{
+    text-decoration:underline;
+    color:rgb(3, 134, 3);
+}
+
+ul{
+    list-style:none;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* Media Query */
+@media (max-width:850px){
+    #navbar ul li{
+        display:none;
+    }
+    #navbar .toggle-bar i{
+        display:block;
+
+    }
+    .dropdown_menu{
+        display:block;
+    }
+    
+    #home .main-heading{
+        font-size:2.2rem;
+    }
+    #about .rightSection{
+        flex-basis:80%;
+    }
+    
+}
+@media (max-width:850px){
+    .dropdown_menu{
+        left:1rem;
+        width:100%;
+    }
+    .dropdown_menu li a{
+        text-decoration:none;
+        color:black;
+        text-align: center;
+    }
+    .dropdown_menu li a:hover{
+        text-decoration:underline;
+    }
+    #about .rightSection .btn{
+        width:100px;
+    }
+}
+@media(max-width:970px){
+    footer{
+        bottom:unfit;
+    }
+    .footer-col{
+        flex-basis:100%;
+    }
+    .footer-col:nth-child(2),.footer-col:nth-child(3){
+        flex-basis:100%;
+    }
+    .footer-col h3{
+        margin-top:20px;
+        margin-bottom:6px;
+    }
+}
+
+@media (max-width:400px){
+    #home .main-heading{
+        font-size:1.7rem;
+    }
+
+    #about .rightSection h3{
+        font-size:2rem;
+    }
+
+    #about .rightSection p{
+        font-size:12px;
+    }
+    #certification .cert-col a .btn{
+        width:60vw;
+        font-size:0.7rem;
+    }
+    #skills .hacking-logo img{
+        height:150px;
+        width:200px;
+    }
+    #seventhSection .website p{
+        font-size:0.7rem;
+    }
+}
+@media (max-width:497px){
+    #seventhSection .email-address p{
+        font-size:0.7rem;
+    }
+    #skills img{
+        margin:5px;
+        padding:20px;
+        height:100px;
+        width:100px;
+    }
+    
+}
+@media (max-width:475px){
+    #certification .cert-col a .btn{
+        width:60vw;
+        font-size:0.7rem;
+    }
+    #certification .cert-col img{
+        height:60px;
+        width:150px;
+    }
+    #education .box{
+        font-size:0.7rem;
+        padding:0px;
+        margin:0;
+    }
+    #education .box h4{
+        font-size:0.8rem;
+    }
+}
+
+@media (max-width:350px){
+    
+    #certification .cert-col{
+        padding:6px;
+        font-size:0.7rem;
+    } 
+    /* #home .main-heading{
+        font-size:1.4rem;
+    } */
+    .footer-col .email-id{
+        font-size:0.8rem;
+    }
+
+    #home .main-heading{
+        font-size:1.3rem;
+    }
+    #home .first-para{
+        font-size:1rem;
+    }
+    #home .second-para{
+        font-size:1rem;
+    }
+    #about .rightSection{
+        flex-basis:40%;
+        width:80%;
+    }
+    #about .rightSection .desc .name{
+        margin:0;
+        margin-left:4px;
+    }
+    
+    #about .rightSection .desc .dob{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .address{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .pincode{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .email{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .phone{
+        margin:0;
+        margin-left:4px;
+    }
+
+    #about .rightSection .btn{
+        font-size:0.8rem;
+    }
+}
