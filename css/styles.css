@@ -634,12 +634,13 @@ a{
         background:rgb(80, 212, 98);
         position:fixed;
         top:0px;
-        right:-200px;
+        right:0;
         width:200px;
-        height:40vh;
+        height:360px;
         padding-top:50px;
         z-index:2;
         transition:right 0.5s;
+        overflow:hidden;
     }
     nav ul li{
         display:block;
