@@ -634,7 +634,7 @@ a{
         background:rgb(80, 212, 98);
         position:fixed;
         top:0px;
-        right:0;
+        right:-200px;
         width:200px;
         height:360px;
         padding-top:50px;
