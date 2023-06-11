@@ -1,0 +1,56 @@
+.navbar{
+    background-color: rgb(6, 118, 75);
+    margin-top:-20px;
+    margin-left:-20px;
+    margin-right:-20px;
+}
+
+.navbar ul{
+    overflow: auto;
+}
+.navbar li{
+    float: left;
+    list-style: none;
+    margin: 13px 13px;
+}
+
+.navbar li a{
+    padding: 3px 3px;
+    text-decoration: none;
+    color: white;
+}
+
+.search{
+    float: right;
+    color: white;
+    padding: 12px 75px;
+}
+
+.navbar input{
+    border-radius: 14px;
+    border: 2px solid rgb(6, 118, 75);
+    padding: 3px;
+    width: 200px;
+}
+
+.box{
+    background-color: royalblue;
+    border: 2px solid black;
+    margin: 0;
+    padding: 24px;
+    width:32%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.container{
+    margin: auto;
+    width: 80%;
+    /* border: 5px solid red; */
+}
+
+body{
+    background-image: url(images/pexels-pixabay-207580.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

@@ -12,50 +12,48 @@ body{
     font-family: "Poppins", Arial, sans-serif;
 }
 
-/* Navigation Bar */
-#navbar{
+/*------------------Navigation Bar-----------------------*/
+nav{
     display:flex;
     justify-content: space-evenly;
     align-items:center;
-    top:0;
-    left:0;
+    background-color: #ffffff;
     position:sticky;
-    height:60px;
-}
-#navbar::before{
-    background-color: white;
-    content:"";
-    position:absolute;
     top:0;
     left:0;
-    height: 100%;
-    width: 100%;
-    z-index:-1;
+    overflow: hidden;
+    width:100%;
+    height:60px;
+    margin:0;
+    padding:0;
 }
 /* Navigation Bar - Logo and Image */
-#navbar #logo img{
+nav #logo img{
     width: 100px;
 }
 /* Navigation Bar - List and Styling */
-#navbar ul{
-    display:flex;
+
+nav ul{
     font-size: 1.01rem;
 }
-#navbar ul li{
+
+nav ul li{
+    display:inline-block;
     list-style:none;
     margin:20px;
 }
-#navbar ul li a{
+
+nav ul li a{
     text-decoration:none;
     color:black;
 }
-#navbar .toggle-bar i{
+nav .toggle-bar i{
     font-size:1.5rem;
     cursor:pointer;
     display:none;
 }
 
-/* DropDown Menu */
+/*------------------ DropDown Menu ----------------  */
 .dropdown_menu{
     display:none;
     position:absolute;
@@ -63,7 +61,6 @@ body{
     top:60px;
     height:0;
     width:300px;
-    /* background-color: red; */
     backdrop-filter:blur(15px);
     border-radius:10px;
     overflow:hidden;
@@ -78,9 +75,11 @@ body{
     align-items: center;
     justify-content: center;
 }
-/* Home Section */
 
-#home{
+
+/* ---------------Home Section--------------------*/
+
+#home .container{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -89,13 +88,13 @@ body{
     height: 80vh;
 }
 
-#home .first-para{
+.container .first-para{
     font-size:16px;
     font-weight: bold;
     letter-spacing: 4px;
     color:rgb(3, 134, 3);
 }
-#home .main-heading{
+.container .main-heading{
     font-size:4rem;
     font-weight: 900;
     font-family: 'Sorts Mill Goudy', serif;
@@ -103,12 +102,12 @@ body{
     text-transform:uppercase;
 }
 
-#home .second-para{
+.container .second-para{
     font-size: 25px;
     font-weight:bold;
 }
 
-/* About Section */
+/*--------------------About Section-----------------*/
 
 #about{
     display:flex;
@@ -190,11 +189,17 @@ body{
 #about .rightSection h4 .project{
     color:rgb(19, 237, 19);
 }
-/* #about .rightSection .btn:hover{
-    text-decoration:underline;
-} */
+#about .rightSection .btn a{
+    text-decoration:none;
+    color:black;
+}
 
-/* Education Section */
+#about .rightSection .btn:hover{
+    text-decoration:underline;
+}
+
+/*-------------------Education Section-------------------------*/
+
 .heading-education{
     text-align:center;
     margin-bottom: 20px;
@@ -209,7 +214,7 @@ body{
     margin-top:10px;
     text-align:center;
 }
-.thirdSection > p{
+#thirdSection > p{
     text-align: center;
 }
 #education .box i{
@@ -250,10 +255,11 @@ body{
 #education .box .underline{
     width: 60px;
     border:1.5px solid green;
+    background-color: green;
     margin-bottom: 13px;
 }
 
-/* Skills Section  */
+/*------------------------Skills Section---------------------------*/
 
 .heading-skills{
     text-align:center;
@@ -305,7 +311,8 @@ body{
     left:0;
 } */
 
-/* Certification Section */
+/*-----------------------------Certification Section--------------------------*/
+
 .heading-certification{
     text-align:center;
     margin-bottom: 20px;
@@ -348,13 +355,18 @@ body{
     width:250px;
     font-size:1rem;
     cursor:pointer;
-    border-radius:20px;
+    border-radius:15px;
     font-weight: bold;
+    border:none;
+    background-color: white;
 }
 #certification .cert-col a .btn i{
     margin-left:5px;
 }
-/* Project Section */
+
+
+/*-----------------------------Project Section-------------------------------*/
+
 /* background-color:rgb(5, 187, 5); */
 #sixthSection{
     display:none;
@@ -398,7 +410,7 @@ body{
     padding: 20px;
 }
 
-/* Contact Section */
+/*-----------------------------Contact Section------------------------------*/
 .heading-contact{
     text-align:center;
     margin-bottom:40px;
@@ -451,7 +463,8 @@ body{
 }
 
 
-/* Form Section */
+/*--------------------------------Form Section----------------------------*/
+
 .eightSection{
     display:flex;
     justify-content: center;
@@ -483,13 +496,12 @@ body{
 .eightSection .right .submit .btn{
     margin-left:10px;
     width: 12em;
-    height:7vh;
-    border: none;
+    height:5vh;
+    border: 1px solid black;
     background-color: rgb(19, 237, 19);
-    border-radius: 25px;
+    border-radius: 5px;
     font-size: 14px;
     text-transform: uppercase;
-    color:white;
     font-weight: bolder;
     letter-spacing: 2px;
     cursor:pointer;
@@ -498,7 +510,7 @@ body{
     color: black;
 }
 
-/* Footer Section */
+/*---------------------------------Footer Section-----------------------------*/
 .row{
     display:flex;
     flex-wrap:wrap;
@@ -588,7 +600,7 @@ footer{
     color:white;
 }
 
-/* Utility Classes */
+/*----------------------------------Utility Classes-------------------------------*/
 #element{
     text-decoration:underline;
     color:rgb(3, 134, 3);
@@ -602,12 +614,13 @@ a{
     text-decoration:none;
 }
 
-/* Media Query */
+/*--------------------------------Media Query-----------------------------------------*/
+
 @media (max-width:850px){
-    #navbar ul li{
+    nav ul li{
         display:none;
     }
-    #navbar .toggle-bar i{
+    nav .toggle-bar i{
         display:block;
 
     }
@@ -615,7 +628,7 @@ a{
         display:block;
     }
     
-    #home .main-heading{
+    .container .main-heading{
         font-size:2.2rem;
     }
     #about .rightSection{
@@ -657,7 +670,7 @@ a{
 }
 
 @media (max-width:400px){
-    #home .main-heading{
+    .container .main-heading{
         font-size:1.7rem;
     }
 
@@ -678,6 +691,9 @@ a{
     }
     #seventhSection .website p{
         font-size:0.7rem;
+    }
+    .container .second-para{
+        font-size:1.3rem;
     }
 }
 @media (max-width:497px){
@@ -702,12 +718,12 @@ a{
         width:150px;
     }
     #education .box{
-        font-size:0.7rem;
+        font-size:0.85rem;
         padding:0px;
         margin:0;
     }
     #education .box h4{
-        font-size:0.8rem;
+        font-size:1rem;
     }
 }
 
@@ -717,20 +733,20 @@ a{
         padding:6px;
         font-size:0.7rem;
     } 
-    /* #home .main-heading{
+    /* .container .main-heading{
         font-size:1.4rem;
     } */
     .footer-col .email-id{
         font-size:0.8rem;
     }
 
-    #home .main-heading{
+    .container .main-heading{
         font-size:1.3rem;
     }
-    #home .first-para{
+    .container .first-para{
         font-size:1rem;
     }
-    #home .second-para{
+    .container .second-para{
         font-size:1rem;
     }
     #about .rightSection{

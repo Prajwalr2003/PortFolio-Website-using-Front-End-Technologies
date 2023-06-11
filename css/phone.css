@@ -15,23 +15,23 @@
     flex-wrap:wrap;
 }
 #education .box{
-    flex-basis:60%;
+    flex-basis:90%;
     padding:0px;
     margin-top:50px;
 }
-#education .box:hover{
-    background-color: white;
-}
-#education .box i{
-    color:black;
+
+#education #box3{
+    margin-bottom:80px;
 }
 /* Certification Section */
 #certification .cert-col{
-    flex-basis:60%;
+    flex-basis:75%;
     height:400px;
-    background: linear-gradient(to right, rgb(76, 198, 76), rgb(23, 186, 23));
+    background: linear-gradient(to right, rgb(124, 243, 124), rgb(96, 255, 96));
     margin-top:30px;
     margin-left:0px;
+    border:1px solid green;
+    border-radius: 8px;
 }
 #certification .udemy{
     margin-bottom: 60px;
