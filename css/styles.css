@@ -631,12 +631,12 @@ a{
         font-size:25px;
     }
     nav ul{
-        background:rgb(116, 165, 116);
+        background:rgb(80, 212, 98);
         position:fixed;
-        top:0;
+        top:0px;
         right:-200px;
         width:200px;
-        height:100vh;
+        height:40vh;
         padding-top:50px;
         z-index:2;
         transition:right 0.5s;
@@ -671,9 +671,9 @@ a{
     }
 }
 
-@media (max-width:400px){
+@media (max-width:430px){
     .container .main-heading{
-        font-size:1.7rem;
+        font-size:2rem;
     }
 
     #about .rightSection h3{
@@ -729,7 +729,7 @@ a{
     }
 }
 
-@media (max-width:350px){
+@media (max-width:370px){
     
     #certification .cert-col{
         padding:6px;
