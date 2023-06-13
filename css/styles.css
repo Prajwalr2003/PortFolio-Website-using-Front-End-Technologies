@@ -679,6 +679,31 @@ a{
     #about .rightSection h3{
         font-size:2rem;
     }
+    #about .rightSection .desc .name{
+        margin:0;
+        margin-left:4px;
+    }
+    
+    #about .rightSection .desc .dob{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .address{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .pincode{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .email{
+        margin:0;
+        margin-left:4px;
+    }
+    #about .rightSection .desc .phone{
+        margin:0;
+        margin-left:4px;
+    }
 
     #about .rightSection p{
         font-size:12px;
