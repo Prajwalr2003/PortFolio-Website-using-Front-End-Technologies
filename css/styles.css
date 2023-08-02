@@ -246,21 +246,21 @@ nav .fas{
 }
 
 #box1{
-    background-image: url("/images/geca_img.jpeg");
+    background-image: url("../images/geca_img.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
 }
 #box2{
-    background-image: url("/images/db_img.jpg");
+    background-image: url("../images/db_img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     color:white;
 }
 #box3{
-    background-image: url("/images/school_img.jpg");
+    background-image: url("../images/school_img.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
