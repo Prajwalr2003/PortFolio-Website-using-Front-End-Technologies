@@ -2,6 +2,7 @@
 *{
     margin:0;
     padding:0;
+    user-select: none;
 }
 
 html{
@@ -29,6 +30,7 @@ nav{
 nav #logo img{
     width: 100px;
 }
+
 /* Navigation Bar - List and Styling */
 
 nav ul{
@@ -152,31 +154,30 @@ nav .fas{
     padding: 6px;
 }
 #about .rightSection .btn{
-    margin-left: 6px;
-    margin-top: 10px;
-    width: 12em;
-    height:7vh;
-    border: 1px solid black;
+    margin:10px 10px;
+    height:6vh;
     background-color: rgb(19, 237, 19);
-    border-radius: 15px;
-    font-size: 14px;
-    text-transform: uppercase;
     color:black;
     font-weight: bolder;
     letter-spacing: 2px;
     cursor:pointer;
+    padding:10px;
 }
 
 #about .rightSection h4 .project{
     color:rgb(19, 237, 19);
+    -webkit-text-stroke: 1px rgb(23, 109, 23);
 }
 #about .rightSection .btn a{
     text-decoration:none;
     color:black;
+    font-family: 'Borel', cursive;
+    -webkit-text-stroke: 1px black;
+    text-align: center;
 }
 
 #about .rightSection .btn:hover{
-    text-decoration:underline;
+    box-shadow: 1px 1px 1px 1px green;
 }
 
 /*-------------------Education Section-------------------------*/
@@ -202,7 +203,8 @@ nav .fas{
     text-align: center;
 }
 #education .box i{
-    color:rgb(3, 134, 3);
+    /* color:rgb(3, 134, 3); */
+    color:white;
 }
 #education{
     display:flex;
@@ -222,13 +224,13 @@ nav .fas{
     flex-basis:30%;
 }
 
-#education .box:hover{
+/* #education .box:hover{
     background-color: rgb(19, 237, 19);
-}
+} */
 
-#education .box:hover i{
+/* #education .box:hover i{
     color:black;
-}
+} */
 
 #education .box p{
     padding: 6px;
@@ -237,17 +239,38 @@ nav .fas{
 
 #education .box .underline{
     width: 60px;
-    border:1.5px solid green;
-    background-color: green;
+    border:1.5px solid white;
+    background-color: white;
     margin-bottom: 13px;
-    background-color: green;
+    background-color: white;
 }
 
+#box1{
+    background-image: url("/images/geca_img.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+#box2{
+    background-image: url("/images/db_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
+#box3{
+    background-image: url("/images/school_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white;
+}
 /*------------------------Skills Section---------------------------*/
 
 
 #fourthSection{
-    background-color: rgb(115, 240, 119);
+    background: rgb(103, 251, 103);
     padding-top:80px;
     padding-bottom: 15px;
 }
@@ -280,10 +303,14 @@ nav .fas{
 }
 
 #skills .hacking-logo img{
-    height:250px;
-    width:350px;
+    height:300px;
+    width:300px;
 }
 
+#skills .hacking-logo h2{
+    text-align:center;
+    margin-bottom:50px;
+}
 /*-----------------------------Certification Section--------------------------*/
 
 #fifthSection{
@@ -307,8 +334,9 @@ nav .fas{
 
 #certification .cert-col{
     margin-left:20px;
-    flex-basis:40%;
-    height:60vh;
+    margin-bottom:20px;
+    flex-basis:30%;
+    height:53vh;
     padding:20px;
     text-align:center;
     background-color: rgb(167, 249, 167);
@@ -475,20 +503,20 @@ nav .fas{
     font-family: "Poppins", Arial, sans-serif;
 }
 .eightSection .right .submit .btn{
-    margin-left:10px;
-    width: 12em;
-    height:5vh;
+    margin:10px;
+    padding:10px;
+    height:6vh;
     border: 1px solid black;
     background-color: rgb(19, 237, 19);
-    border-radius: 5px;
     font-size: 14px;
-    text-transform: uppercase;
     font-weight: bolder;
     letter-spacing: 2px;
     cursor:pointer;
+    font-family: 'Borel', cursive;
+    -webkit-text-stroke: 1px black;
 }
 .eightSection .right .submit .btn:hover{
-    color: black;
+    box-shadow: 1px 1px 1px 1px green;
 }
 #msg{
     color:#61b752;
@@ -713,8 +741,8 @@ a{
         font-size:0.7rem;
     }
     #skills .hacking-logo img{
-        height:150px;
-        width:200px;
+        height:270px;
+        width:250px;
     }
     #seventhSection .website p{
         font-size:0.7rem;
@@ -747,7 +775,7 @@ a{
     #education .box{
         font-size:0.85rem;
         padding:0px;
-        margin:0;
+        margin-bottom:10px;
     }
     #education .box h4{
         font-size:1rem;
