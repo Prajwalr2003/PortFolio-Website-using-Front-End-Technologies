@@ -59,7 +59,8 @@
 #seventhSection .contact .details{
     flex-basis:60%;
     height:40vh;
-    background:linear-gradient(to right, rgb(90, 230, 90), rgb(148, 255, 148));
+    /* background:linear-gradient(to right, rgb(90, 230, 90), rgb(148, 255, 148)); */
+    background-color: rgb(32, 30, 30);
 }
 /* Form Section  */
 .eightSection .left{
