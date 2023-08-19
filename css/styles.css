@@ -11,7 +11,7 @@ html{
 
 body{
     font-family: "Poppins", Arial, sans-serif;
-    background-color: black;
+    background-color: rgb(20, 20, 20);
     color:white;
 }
 
@@ -22,7 +22,7 @@ nav{
     justify-content: space-evenly;
     align-items:center;
     /* background-color: #ffffff; */
-    background-color: rgb(12, 11, 11);
+    background-color: rgb(42, 42, 42);
     position:sticky;
     top:0;
     right:0;
@@ -543,7 +543,7 @@ nav .fas{
 }
 
 footer{
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(29, 27, 27);
     padding-top:70px;
     padding-bottom: 20px;
     color:#ffffff;
