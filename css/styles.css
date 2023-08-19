@@ -156,24 +156,20 @@ nav .fas{
     margin-left: 78px;
 }
 #about .rightSection h4{
-    /* margin-left: 6px; */
     padding: 6px;
 }
 #about .rightSection .btn{
     background-color: rgb(255, 255, 255);;
     color:black;
     font-weight: bolder;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     cursor:pointer;
     padding:10px;
     border:none;
 }
 
 #about .rightSection h4 .project{
-    /* color:rgb(19, 237, 19); */
     color:rgb(111, 111, 253);
-    /* -webkit-text-stroke: 1px rgb(23, 109, 23); */
-    /* -webkit-text-stroke: 1px rgb(111, 111, 253); */
 }
 #about .rightSection .btn a{
     text-decoration:none;
