@@ -1,8 +1,7 @@
 # **Personal Portfolio Website** 
-> Access my portfolio using this link [PortFolio](https://prajwalr2003.github.io/prajwalrangariportfolio.github.io/)
+> Access my portfolio using this link [PortFolio](https://prajwalr2003.github.io/PortFolio-Website-using-Front-End-Technologies/).
 
-
-![Screenshot 2023-10-03 215930](https://github.com/Prajwalr2003/prajwalrangariportfolio.github.io/assets/113047858/5d82a6f0-7728-4f23-946b-0dd324126f28)
+![Preview-of-myportfolio-website](https://github.com/Prajwalr2003/PortFolio-Website-using-Front-End-Technologies/assets/113047858/5752cc38-2a63-4d6d-8569-e0af60ea323d)
 
 ## **Overview:**
 Welcome to my personal portfolio website! This website showcases my skills, projects, and experiences as a web developer, designer using HTML, CSS, and JavaScript. Here, you'll find a collection of my work, information about me, and ways to get in touch.
@@ -25,7 +24,7 @@ Multiple ways to get in touch with me, including a contact form and links to my 
 ### Technologies Used: 
 **Frontend:** HTML, CSS, JavaScript.
 ### **Deployment:** 
-This website is hosted GitHub Pages and can be accessed at [PortFolio](https://prajwalr2003.github.io/prajwalrangariportfolio.github.io/).
+This website is hosted GitHub Pages and can be accessed at [PortFolio](https://prajwalr2003.github.io/PortFolio-Website-using-Front-End-Technologies/).
 
 ## **How to Use:**
 Feel free to explore my portfolio by visiting [PortFolio](https://prajwalr2003.github.io/prajwalrangariportfolio.github.io/). You can navigate through different sections to learn more about me and my work. Don't hesitate to reach out if you have any questions, feedback, or potential collaboration opportunities.
